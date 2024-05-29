@@ -1,0 +1,255 @@
+/*configuração usando um seletor universal, ou seja as alterações é em toda estrutura*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/*configuração da estrutura HTML*/
+html {
+    font-family: arial;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/*configuração do cabeçalho criado na linha 12 do HTML*/
+header {
+    background: linear-gradient(to bottom, red, orange);
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    width: 100%;
+    position: fixed;
+
+}
+
+/*configuração do ID declarado na DIV da linha 22 do HTML*/
+#compras {
+    width: 300px;
+    height: 100px;
+    background-color: rgba(255, 215, 0, 0.5);
+    right: 0;
+    position: fixed;
+    z-index: 1;
+    margin-top: 21rem;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 40px;
+    border: solid rgb(0, 255, 0);
+}
+
+@media(min-width: 280px) and (max-width: 820px) {
+    #compras {
+        width: 160px;
+        height: 100px;
+        background-color: rgba(255, 215, 0, 0.5);
+        right: 0;
+        position: fixed;
+        z-index: 1;
+        margin-top: 25rem;
+        text-align: center;
+        border-radius: 20px;
+        padding-top: 5px;
+        border: solid rgb(0, 255, 0);
+    }
+}
+
+/*configuração dos INPUT do Formulario com inicio na linha 100 do HTML*/
+input {
+    border: solid;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+}
+
+/*configuração do ID declarado na linha 118 do HTML*/
+#mensagem {
+    border: solid;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+}
+
+/*configuração do ID declarado na linha 120 do HTML*/
+#btn-limpar {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*configuração do ID declarado na linha 121 do HTML*/
+#btn-enviar {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*configuração da tag NAV menu principaL na linha 13 do HTML*/
+nav {
+    text-align: right;
+    word-spacing: 30px;
+    font-size: 1.8rem;
+    margin-right: 5%;
+    padding-bottom: 5px;
+}
+
+/*configuração dos link criado dentro da Tag NAV na linha 14 do HTML*/
+a {
+    text-decoration: none;
+    color: #ffff00;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px #000;
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*quando estiver no modo hover muda de cor para a configurada, mas pra funcionamento desktop*/
+a:hover {
+    color: #fff;
+    text-shadow: 2px 2px 3px #000;
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    border: solid #ffff00;
+}
+
+
+/*configuração de rodapé do site na  linha 130 do HTML*/
+footer {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+/*configruação da classe declaradas nas linhas 41, 48, 66, 82, 96 do HTML*/
+.conteudo {
+    font-size: 1.6rem;
+    background-color: white;
+    padding: 1.5rem;
+    margin: 0 auto;
+    text-align: justify;
+    max-width: 95%;
+
+}
+
+/*configruação da classe declarada da section na linha 27 do HTML*/
+.conteudo-topo {
+    font-size: 1.6rem;
+    background-color: white;
+    padding: 1.5rem;
+    margin: 0 auto;
+    text-align: justify;
+    max-width: 95%;
+    padding-top: 32rem;
+}
+
+/*configuração da TAG h1 na linha 29 do HTML*/
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    color: rgb(255, 0, 0);
+}
+
+/*configuração da TAG h2 nas  linhas 42, 49 e 67 do HTML */
+h2 {
+    font-size: 1.9rem;
+}
+
+/*configuração da TAG h3 na linha 18 do HTML*/
+h3 {
+    font-size: 1.7rem;
+}
+
+/*configuração da TAG h4 nas linhas 19 e 23 do HTML*/
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 3rem;
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+}
+
+/*configuração do corpo do site*/
+body {
+    background-color: #fff
+}
+
+/*configuração da TAG figure, onde ta as imagens e a legenda do site na linha 30 do HTML*/
+figure {
+    text-align: center;
+}
+
+/*configuração da classe declarada na TAG figure na linha 50 do HTML*/
+.imagens-site {
+    border-radius: 10px 10px 10px 10px;
+    width: 70%;
+    height: 50%;
+    border: solid;
+}
+
+
+/*Media queries para a responsividade do site*/
+@media(min-width: 280px) and (max-width: 820px) {
+    .imagens-site {
+        border-radius: 10px 30px 10px 30px;
+        width: 90%;
+        height: 70%;
+    }
+}
+
+
+/*configuração do ID criado na section linha 82 do HTML*/
+#grid-conteudo {
+    background-color: #fff;
+    padding-top: 21rem;
+}
+
+/*configuração da classe declarada na DIV da linha 83 do HTML*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/*configuração da classe declarada na DIV da linha 83 do HTML*/
+.grid div {
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+/*configuração do ID declarado na section da linha 96 do HTML*/
+#formulario {
+    background-color: #dcdcdc;
+}
+
+#btn-compras {
+    text-align: center;
+
+}
+
+.botao {
+    margin-right: 2%;
+
+}
+
+.opcao {
+    background-color: #fff;
+}
